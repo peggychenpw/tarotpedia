@@ -13,20 +13,21 @@
       .name {
         text-transform: uppercase;
         margin: 20px auto;
-        font-size: 24px;
+        font-size: 20px;
         font-family: 'Macondo', 'Cardo', serif ;
+        color: brown;
       }
 
       .keyword-title {
         text-transform: capitalize;
         margin: 10px auto;
         font-size: 18px;
-        font-family: 'Cardo', serif ;
+        font-family: 'Macondo', 'Cardo', serif ;
         font-weight: 700;
       }
 
       .fortune {
-        text-transform: capitalize;
+       
         word-wrap:break-word;
         margin: 10px auto;
         font-size: 16px;

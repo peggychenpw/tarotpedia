@@ -6,8 +6,8 @@ import "../card-list/card-list.scss"
 const CardList = ({ cardData }) => {
     return (
         <div className="card-list">
-            {cardData.map((card) => (
-                <CardItem key={card.number} card={card} />
+            {cardData.map((card, index) => (
+                <CardItem key={"key" + String(card.number)} card={card} />
             ))
             }
         </div>

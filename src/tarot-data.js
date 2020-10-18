@@ -1005,7 +1005,7 @@ const CardData = [
     },
     {
         name: "Ace of Cups",
-        number: "1",
+        number: "22",
         arcane: "Minor Arcana",
         suit: "Cups",
         img: "c01.jpg",
@@ -1049,7 +1049,7 @@ const CardData = [
     },
     {
         name: "Two of Cups",
-        number: "2",
+        number: "23",
         arcane: "Minor Arcana",
         suit: "Cups",
         img: "c02.jpg",
@@ -1093,7 +1093,7 @@ const CardData = [
     },
     {
         name: "Three of Cups",
-        number: "3",
+        number: "24",
         arcane: "Minor Arcana",
         suit: "Cups",
         img: "c03.jpg",
@@ -1133,7 +1133,7 @@ const CardData = [
     },
     {
         name: "Four of Cups",
-        number: "4",
+        number: "25",
         arcane: "Minor Arcana",
         suit: "Cups",
         img: "c04.jpg",
@@ -1176,7 +1176,7 @@ const CardData = [
     },
     {
         name: "Five of Cups",
-        number: "5",
+        number: "26",
         arcane: "Minor Arcana",
         suit: "Cups",
         img: "c05.jpg",
@@ -1223,7 +1223,7 @@ const CardData = [
     },
     {
         name: "Six of Cups",
-        number: "6",
+        number: "27",
         arcane: "Minor Arcana",
         suit: "Cups",
         img: "c06.jpg",
@@ -1266,7 +1266,7 @@ const CardData = [
     },
     {
         name: "Seven of Cups",
-        number: "7",
+        number: "28",
         arcane: "Minor Arcana",
         suit: "Cups",
         img: "c07.jpg",
@@ -1307,7 +1307,7 @@ const CardData = [
     },
     {
         name: "Eight of Cups",
-        number: "8",
+        number: "29",
         arcane: "Minor Arcana",
         suit: "Cups",
         img: "c08.jpg",
@@ -1354,7 +1354,7 @@ const CardData = [
     },
     {
         name: "Nine of Cups",
-        number: "9",
+        number: "30",
         arcane: "Minor Arcana",
         suit: "Cups",
         img: "c09.jpg",
@@ -1397,7 +1397,7 @@ const CardData = [
     },
     {
         name: "Ten of Cups",
-        number: "10",
+        number: "31",
         arcane: "Minor Arcana",
         suit: "Cups",
         img: "c10.jpg",
@@ -1437,7 +1437,7 @@ const CardData = [
     },
     {
         name: "Page of Cups",
-        number: "11",
+        number: "32",
         arcane: "Minor Arcana",
         suit: "Cups",
         img: "c11.jpg",
@@ -1479,7 +1479,7 @@ const CardData = [
     },
     {
         name: "Knight of Cups",
-        number: "12",
+        number: "33",
         arcane: "Minor Arcana",
         suit: "Cups",
         img: "c12.jpg",
@@ -1519,7 +1519,7 @@ const CardData = [
     },
     {
         name: "Queen of Cups",
-        number: "13",
+        number: "34",
         arcane: "Minor Arcana",
         suit: "Cups",
         img: "c13.jpg",
@@ -1559,7 +1559,7 @@ const CardData = [
     },
     {
         name: "King of Cups",
-        number: "14",
+        number: "35",
         arcane: "Minor Arcana",
         suit: "Cups",
         img: "c14.jpg",
@@ -1598,7 +1598,7 @@ const CardData = [
     },
     {
         name: "Ace of Swords",
-        number: "1",
+        number: "36",
         arcane: "Minor Arcana",
         suit: "Swords",
         img: "s01.jpg",
@@ -1642,7 +1642,7 @@ const CardData = [
     },
     {
         name: "Two of Swords",
-        number: "2",
+        number: "37",
         arcane: "Minor Arcana",
         suit: "Swords",
         img: "s02.jpg",
@@ -1684,7 +1684,7 @@ const CardData = [
     },
     {
         name: "Three of Swords",
-        number: "3",
+        number: "38",
         arcane: "Minor Arcana",
         suit: "Swords",
         img: "s03.jpg",
@@ -1726,7 +1726,7 @@ const CardData = [
     },
     {
         name: "Four of Swords",
-        number: "4",
+        number: "39",
         arcane: "Minor Arcana",
         suit: "Swords",
         img: "s04.jpg",
@@ -1766,7 +1766,7 @@ const CardData = [
     },
     {
         name: "Five of Swords",
-        number: "5",
+        number: "40",
         arcane: "Minor Arcana",
         suit: "Swords",
         img: "s05.jpg",
@@ -1811,7 +1811,7 @@ const CardData = [
     },
     {
         name: "Six of Swords",
-        number: "6",
+        number: "41",
         arcane: "Minor Arcana",
         suit: "Swords",
         img: "s06.jpg",
@@ -1854,7 +1854,7 @@ const CardData = [
     },
     {
         name: "Seven of Swords",
-        number: "7",
+        number: "42",
         arcane: "Minor Arcana",
         suit: "Swords",
         img: "s07.jpg",
@@ -1895,7 +1895,7 @@ const CardData = [
     },
     {
         name: "Eight of Swords",
-        number: "8",
+        number: "43",
         arcane: "Minor Arcana",
         suit: "Swords",
         img: "s08.jpg",
@@ -1941,7 +1941,7 @@ const CardData = [
     },
     {
         name: "Nine of Swords",
-        number: "9",
+        number: "44",
         arcane: "Minor Arcana",
         suit: "Swords",
         img: "s09.jpg",
@@ -1985,7 +1985,7 @@ const CardData = [
     },
     {
         name: "Ten of Swords",
-        number: "10",
+        number: "45",
         arcane: "Minor Arcana",
         suit: "Swords",
         img: "s10.jpg",
@@ -2030,7 +2030,7 @@ const CardData = [
     },
     {
         name: "Page of Swords",
-        number: "11",
+        number: "46",
         arcane: "Minor Arcana",
         suit: "Swords",
         img: "s11.jpg",
@@ -2072,7 +2072,7 @@ const CardData = [
     },
     {
         name: "Knight of Swords",
-        number: "12",
+        number: "47",
         arcane: "Minor Arcana",
         suit: "Swords",
         img: "s12.jpg",
@@ -2119,7 +2119,7 @@ const CardData = [
     },
     {
         name: "Queen of Swords",
-        number: "13",
+        number: "48",
         arcane: "Minor Arcana",
         suit: "Swords",
         img: "s13.jpg",
@@ -2165,7 +2165,7 @@ const CardData = [
     },
     {
         name: "King of Swords",
-        number: "14",
+        number: "49",
         arcane: "Minor Arcana",
         suit: "Swords",
         img: "s14.jpg",
@@ -2207,7 +2207,7 @@ const CardData = [
     },
     {
         name: "Ace of Wands",
-        number: "1",
+        number: "50",
         arcane: "Minor Arcana",
         suit: "Wands",
         img: "w01.jpg",
@@ -2253,7 +2253,7 @@ const CardData = [
     },
     {
         name: "Two of Wands",
-        number: "2",
+        number: "51",
         arcane: "Minor Arcana",
         suit: "Wands",
         img: "w02.jpg",
@@ -2295,7 +2295,7 @@ const CardData = [
     },
     {
         name: "Three of Wands",
-        number: "3",
+        number: "52",
         arcane: "Minor Arcana",
         suit: "Wands",
         img: "w03.jpg",
@@ -2337,7 +2337,7 @@ const CardData = [
     },
     {
         name: "Four of Wands",
-        number: "4",
+        number: "53",
         arcane: "Minor Arcana",
         suit: "Wands",
         img: "w04.jpg",
@@ -2379,7 +2379,7 @@ const CardData = [
     },
     {
         name: "Five of Wands",
-        number: "5",
+        number: "54",
         arcane: "Minor Arcana",
         suit: "Wands",
         img: "w05.jpg",
@@ -2420,7 +2420,7 @@ const CardData = [
     },
     {
         name: "Six of Wands",
-        number: "6",
+        number: "55",
         arcane: "Minor Arcana",
         suit: "Wands",
         img: "w06.jpg",
@@ -2465,7 +2465,7 @@ const CardData = [
     },
     {
         name: "Seven of Wands",
-        number: "7",
+        number: "56",
         arcane: "Minor Arcana",
         suit: "Wands",
         img: "w07.jpg",
@@ -2506,7 +2506,7 @@ const CardData = [
     },
     {
         name: "Eight of Wands",
-        number: "8",
+        number: "57",
         arcane: "Minor Arcana",
         suit: "Wands",
         img: "w08.jpg",
@@ -2550,7 +2550,7 @@ const CardData = [
     },
     {
         name: "Nine of Wands",
-        number: "9",
+        number: "58",
         arcane: "Minor Arcana",
         suit: "Wands",
         img: "w09.jpg",
@@ -2596,7 +2596,7 @@ const CardData = [
     },
     {
         name: "Ten of Wands",
-        number: "10",
+        number: "59",
         arcane: "Minor Arcana",
         suit: "Wands",
         img: "w10.jpg",
@@ -2637,7 +2637,7 @@ const CardData = [
     },
     {
         name: "Page of Wands",
-        number: "11",
+        number: "60",
         arcane: "Minor Arcana",
         suit: "Wands",
         img: "w11.jpg",
@@ -2677,7 +2677,7 @@ const CardData = [
     },
     {
         name: "Knight of Wands",
-        number: "12",
+        number: "61",
         arcane: "Minor Arcana",
         suit: "Wands",
         img: "w12.jpg",
@@ -2719,7 +2719,7 @@ const CardData = [
     },
     {
         name: "Queen of Wands",
-        number: "13",
+        number: "62",
         arcane: "Minor Arcana",
         suit: "Wands",
         img: "w13.jpg",
@@ -2757,7 +2757,7 @@ const CardData = [
     },
     {
         name: "King of Wands",
-        number: "14",
+        number: "63",
         arcane: "Minor Arcana",
         suit: "Wands",
         img: "w14.jpg",
@@ -2795,7 +2795,7 @@ const CardData = [
     },
     {
         name: "Ace of Pentacles",
-        number: "1",
+        number: "64",
         arcane: "Minor Arcana",
         suit: "Pentacles",
         img: "p01.jpg",
@@ -2837,7 +2837,7 @@ const CardData = [
     },
     {
         name: "Two of Pentacles",
-        number: "2",
+        number: "65",
         arcane: "Minor Arcana",
         suit: "Pentacles",
         img: "p02.jpg",
@@ -2880,7 +2880,7 @@ const CardData = [
     },
     {
         name: "Three of Pentacles",
-        number: "3",
+        number: "66",
         arcane: "Minor Arcana",
         suit: "Pentacles",
         img: "p03.jpg",
@@ -2924,7 +2924,7 @@ const CardData = [
     },
     {
         name: "Four of Pentacles",
-        number: "4",
+        number: "67",
         arcane: "Minor Arcana",
         suit: "Pentacles",
         img: "p04.jpg",
@@ -2967,7 +2967,7 @@ const CardData = [
     },
     {
         name: "Five of Pentacles",
-        number: "5",
+        number: "68",
         arcane: "Minor Arcana",
         suit: "Pentacles",
         img: "p05.jpg",
@@ -3011,7 +3011,7 @@ const CardData = [
     },
     {
         name: "Six of Pentacles",
-        number: "6",
+        number: "69",
         arcane: "Minor Arcana",
         suit: "Pentacles",
         img: "p06.jpg",
@@ -3055,7 +3055,7 @@ const CardData = [
     },
     {
         name: "Seven of Pentacles",
-        number: "7",
+        number: "70",
         arcane: "Minor Arcana",
         suit: "Pentacles",
         img: "p07.jpg",
@@ -3098,7 +3098,7 @@ const CardData = [
     },
     {
         name: "Eight of Pentacles",
-        number: "8",
+        number: "71",
         arcane: "Minor Arcana",
         suit: "Pentacles",
         img: "p08.jpg",
@@ -3143,7 +3143,7 @@ const CardData = [
     },
     {
         name: "Nine of Pentacles",
-        number: "9",
+        number: "72",
         arcane: "Minor Arcana",
         suit: "Pentacles",
         img: "p09.jpg",
@@ -3184,7 +3184,7 @@ const CardData = [
     },
     {
         name: "Ten of Pentacles",
-        number: "10",
+        number: "73",
         arcane: "Minor Arcana",
         suit: "Pentacles",
         img: "p10.jpg",
@@ -3226,7 +3226,7 @@ const CardData = [
     },
     {
         name: "Page of Pentacles",
-        number: "11",
+        number: "74",
         arcane: "Minor Arcana",
         suit: "Pentacles",
         img: "p11.jpg",
@@ -3268,7 +3268,7 @@ const CardData = [
     },
     {
         name: "Knight of Pentacles",
-        number: "12",
+        number: "75",
         arcane: "Minor Arcana",
         suit: "Pentacles",
         img: "p12.jpg",
@@ -3313,12 +3313,12 @@ const CardData = [
     },
     {
         name: "Queen of Pentacles",
-        number: "13",
+        number: "76",
         arcane: "Minor Arcana",
         suit: "Pentacles",
         img: "p13.jpg",
         fortune_telling: [
-            "A woman with an expansive, sensual nature, who uses sensual appeal and the promise of reward to sway others to her point of view"
+            "A woman with an expansive, sensual nature, likely born between December 13th and 31st, who uses sensual appeal and the promise of reward to sway others to her point of view"
         ],
         keywords: [
             "luxury",
@@ -3354,12 +3354,12 @@ const CardData = [
     },
     {
         name: "King of Pentacles",
-        number: "14",
+        number: "77",
         arcane: "Minor Arcana",
         suit: "Pentacles",
         img: "p14.jpg",
         fortune_telling: [
-            "An older man with a financially, socially, who is known for putting his money where his mouth is"
+            "This card represents an older man with a financially, socially, and politically conservative spirit, likely born between August 12th and September 11th, who is known for putting his money where his mouth is"
         ],
         keywords: [
             "stability",

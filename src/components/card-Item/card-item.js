@@ -10,6 +10,7 @@ const CardItem = ({ card }) => {
                 <img src={`./cards/${img}`} alt="img" className="image" />
                 <div className="keyword-title">{keywords[0]}</div>
                 <div className="fortune">{fortune_telling[0]}</div>
+                <div className="fortune">{fortune_telling[1]}</div>
             </div>
         </div>
     )
