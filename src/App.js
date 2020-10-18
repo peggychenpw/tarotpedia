@@ -1,26 +1,24 @@
 import React from 'react';
-import logo from './logo.svg';
 import './App.css';
+import CardList from './components/card-list/card-list.jsx'
+import CardData from "./tarot-data"
 
-function App() {
-  return (
-    <div className="App">
-      <header className="App-header">
-        <img src={logo} className="App-logo" alt="logo" />
-        <p>
-          Edit <code>src/App.js</code> and save to reload.
-        </p>
-        <a
-          className="App-link"
-          href="https://reactjs.org"
-          target="_blank"
-          rel="noopener noreferrer"
-        >
-          Learn React
-        </a>
-      </header>
-    </div>
-  );
+class App extends React.Component {
+  constructor() {
+    super()
+    this.state = {
+      cardData: CardData
+    }
+  }
+
+  render() {
+    const { cardData } = this.state
+    return (
+      <div className="App">
+        <CardList cardData={cardData} />
+      </div>
+    )
+  }
 }
 
 export default App;
