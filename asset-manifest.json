@@ -1,22 +1,22 @@
 {
   "files": {
-    "main.css": "/tarotpedia/static/css/main.4bb50e5f.chunk.css",
-    "main.js": "/tarotpedia/static/js/main.8c9f0e1a.chunk.js",
-    "main.js.map": "/tarotpedia/static/js/main.8c9f0e1a.chunk.js.map",
-    "runtime-main.js": "/tarotpedia/static/js/runtime-main.fe4f5ef4.js",
-    "runtime-main.js.map": "/tarotpedia/static/js/runtime-main.fe4f5ef4.js.map",
-    "static/js/2.dfb955d1.chunk.js": "/tarotpedia/static/js/2.dfb955d1.chunk.js",
-    "static/js/2.dfb955d1.chunk.js.map": "/tarotpedia/static/js/2.dfb955d1.chunk.js.map",
-    "index.html": "/tarotpedia/index.html",
-    "precache-manifest.48b53c39f0866d18eaadae34d9f95901.js": "/tarotpedia/precache-manifest.48b53c39f0866d18eaadae34d9f95901.js",
-    "service-worker.js": "/tarotpedia/service-worker.js",
-    "static/css/main.4bb50e5f.chunk.css.map": "/tarotpedia/static/css/main.4bb50e5f.chunk.css.map",
-    "static/js/2.dfb955d1.chunk.js.LICENSE.txt": "/tarotpedia/static/js/2.dfb955d1.chunk.js.LICENSE.txt"
+    "main.css": "./static/css/main.a2042afc.chunk.css",
+    "main.js": "./static/js/main.4ebf197c.chunk.js",
+    "main.js.map": "./static/js/main.4ebf197c.chunk.js.map",
+    "runtime-main.js": "./static/js/runtime-main.52cebd63.js",
+    "runtime-main.js.map": "./static/js/runtime-main.52cebd63.js.map",
+    "static/js/2.dfb955d1.chunk.js": "./static/js/2.dfb955d1.chunk.js",
+    "static/js/2.dfb955d1.chunk.js.map": "./static/js/2.dfb955d1.chunk.js.map",
+    "index.html": "./index.html",
+    "precache-manifest.898169ea398e2a15853984dd65fbfa45.js": "./precache-manifest.898169ea398e2a15853984dd65fbfa45.js",
+    "service-worker.js": "./service-worker.js",
+    "static/css/main.a2042afc.chunk.css.map": "./static/css/main.a2042afc.chunk.css.map",
+    "static/js/2.dfb955d1.chunk.js.LICENSE.txt": "./static/js/2.dfb955d1.chunk.js.LICENSE.txt"
   },
   "entrypoints": [
-    "static/js/runtime-main.fe4f5ef4.js",
+    "static/js/runtime-main.52cebd63.js",
     "static/js/2.dfb955d1.chunk.js",
-    "static/css/main.4bb50e5f.chunk.css",
-    "static/js/main.8c9f0e1a.chunk.js"
+    "static/css/main.a2042afc.chunk.css",
+    "static/js/main.4ebf197c.chunk.js"
   ]
 }
