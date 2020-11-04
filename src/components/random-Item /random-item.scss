@@ -1,0 +1,37 @@
+
+.card-container {
+  text-align: center;
+  margin-bottom: 30px;
+
+  .card-item{
+    
+      .image {
+        width: 60%;
+        height: 60%;
+        cursor: pointer;
+      }
+
+      .name {
+        text-transform: uppercase;
+        margin: 20px auto;
+        font-size: 20px;
+        font-family: 'Macondo', 'Cardo', serif ;
+        color: brown;
+      }
+
+      .keyword-title {
+        text-transform: capitalize;
+        margin: 10px auto;
+        font-size: 18px;
+        font-family: 'Macondo', 'Cardo', serif ;
+        font-weight: 700;
+      }
+
+      .fortune {
+        word-wrap:break-word;
+        margin: 10px auto;
+        font-size: 16px;
+        font-family:'Cardo', serif ;
+      }
+    }
+}

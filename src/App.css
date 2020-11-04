@@ -7,6 +7,7 @@
     background-color: goldenrod;
     display: flex;
     justify-content: space-between;
+    cursor: pointer;
 }
 
 .tarotpedia {

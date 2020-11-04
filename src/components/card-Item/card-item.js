@@ -1,7 +1,9 @@
 import React from 'react';
 import './card-item.scss';
 
+
 const CardItem = ({ card }) => {
+
     const { img, keywords, fortune_telling, name } = card
     return (
         <div className="card-container">
