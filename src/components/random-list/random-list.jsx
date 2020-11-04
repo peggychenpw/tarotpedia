@@ -11,7 +11,7 @@ const RandomList = ({ cardData, isDraw }) => {
             {isDraw === true ?
                 <>
                     <div style={{ marginBottom: "10px" }}>PAST</div>
-                    <div style={{ marginBottom: "10px" }}>NOW</div>
+                    <div style={{ marginBottom: "10px" }}>PRESENT</div>
                     <div style={{ marginBottom: "10px" }}>FUTURE</div>
                 </>
                 :
