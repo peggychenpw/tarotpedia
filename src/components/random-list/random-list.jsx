@@ -7,22 +7,22 @@ import "../random-list/random-list.scss"
 const RandomList = ({ cardData, isDraw }) => {
 
     return (
-        <div className="card-list">
-            {isDraw === true ?
+        <div className="random-list-wrapper">
+            {isDraw === true && cardData.length > 0 ? (
                 <>
-                    <div style={{ marginBottom: "10px" }}>PAST</div>
-                    <div style={{ marginBottom: "10px" }}>PRESENT</div>
-                    <div style={{ marginBottom: "10px" }}>FUTURE</div>
+                    <div className="labels-row">
+                        <div className="label">PAST</div>
+                        <div className="label">PRESENT</div>
+                        <div className="label">FUTURE</div>
+                    </div>
+                    <div className="card-list">
+                        {cardData.map((card, index) => (
+                            <RandomItem key={"key" + String(card.number)} card={card} />
+                        ))}
+                    </div>
                 </>
-                :
-                null
-            }
-            {cardData.map((card, index) => (
-                <RandomItem key={"key" + String(card.number)} card={card} />
-            ))
-            }
+            ) : null}
         </div>
-
     )
 }
 

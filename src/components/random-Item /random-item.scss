@@ -1,37 +1,128 @@
 
 .card-container {
   text-align: center;
-  margin-bottom: 30px;
+  width: 100%;
+  max-width: 280px;
 
-  .card-item{
-    
-      .image {
-        width: 60%;
-        height: 60%;
-        cursor: pointer;
-      }
+  .card-item {
+    background: rgba(255, 255, 255, 0.05);
+    border: 2px solid rgba(212, 165, 116, 0.4);
+    border-radius: 15px;
+    padding: 1.5rem;
+    transition: all 0.4s ease;
+    backdrop-filter: blur(10px);
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    min-height: 420px;
+    box-shadow: 0 8px 32px rgba(0, 0, 0, 0.2);
+
+    .image {
+      max-width: 150px;
+      width: 100%;
+      height: auto;
+      aspect-ratio: 3/4;
+      object-fit: cover;
+      border-radius: 12px;
+      cursor: pointer;
+      transition: all 0.4s cubic-bezier(0.23, 1, 0.320, 1);
+      margin-bottom: 1rem;
+      box-shadow: 0 4px 15px rgba(0, 0, 0, 0.3);
+      transform-style: preserve-3d;
+    }
+
+    .image:hover {
+      transform: scale(1.05) rotateY(5deg);
+      box-shadow: 0 8px 25px rgba(212, 165, 116, 0.4);
+    }
+
+    .name {
+      text-transform: uppercase;
+      margin: 1rem 0 0.5rem 0;
+      font-size: 1.2rem;
+      font-family: 'Macondo', 'Cardo', serif;
+      color: #d4a574;
+      font-weight: 700;
+      letter-spacing: 1px;
+      animation: fadeIn 0.5s ease;
+    }
+
+    .keyword-title {
+      text-transform: capitalize;
+      margin: 0.75rem 0;
+      font-size: 1rem;
+      font-family: 'Macondo', 'Cardo', serif;
+      font-weight: 700;
+      color: #e8d4b8;
+      animation: fadeIn 0.6s ease;
+    }
+
+    .fortune {
+      word-wrap: break-word;
+      margin: 0.5rem 0;
+      font-size: 0.9rem;
+      font-family: 'Cardo', serif;
+      color: #b8b8b8;
+      line-height: 1.5;
+      animation: fadeIn 0.7s ease;
+    }
+  }
+}
+
+@keyframes fadeIn {
+  from {
+    opacity: 0;
+    transform: translateY(-10px);
+  }
+  to {
+    opacity: 1;
+    transform: translateY(0);
+  }
+}
+
+@media (max-width: 768px) {
+  .card-container {
+    max-width: 100%;
+
+    .card-item {
+      min-height: auto;
+      padding: 1rem;
 
       .name {
-        text-transform: uppercase;
-        margin: 20px auto;
-        font-size: 20px;
-        font-family: 'Macondo', 'Cardo', serif ;
-        color: brown;
+        font-size: 1.1rem;
       }
 
       .keyword-title {
-        text-transform: capitalize;
-        margin: 10px auto;
-        font-size: 18px;
-        font-family: 'Macondo', 'Cardo', serif ;
-        font-weight: 700;
+        font-size: 0.95rem;
       }
 
       .fortune {
-        word-wrap:break-word;
-        margin: 10px auto;
-        font-size: 16px;
-        font-family:'Cardo', serif ;
+        font-size: 0.85rem;
       }
     }
+  }
+}
+
+@media (max-width: 480px) {
+  .card-container {
+    .card-item {
+      padding: 0.8rem;
+
+      .image {
+        max-width: 120px;
+      }
+
+      .name {
+        font-size: 1rem;
+      }
+
+      .keyword-title {
+        font-size: 0.9rem;
+      }
+
+      .fortune {
+        font-size: 0.8rem;
+      }
+    }
+  }
 }

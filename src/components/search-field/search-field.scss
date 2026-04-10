@@ -1,9 +1,50 @@
 .search {
+    display: block;
+    margin: 1.5rem auto;
+    padding: 0.75rem 1rem;
+    width: 90%;
+    max-width: 300px;
+    background: var(--bg-secondary);
+    border: 2px solid var(--accent-gold);
+    border-radius: 25px;
+    font-size: 1rem;
+    font-family: 'Cardo', serif;
+    color: var(--text-primary);
+    transition: all 0.3s ease;
     outline: none;
-    border: 5px solid goldenrod;
-    border-radius: 5px;
-    padding: 10px;
-    width: 150px;
-    margin: 20px auto;
-    font-size: 14px;
+    animation: slideDown 0.5s ease;
+    text-align: center;
+}
+
+.search::placeholder {
+    color: var(--text-secondary);
+}
+
+.search:focus {
+    background: var(--bg-secondary);
+    border-color: var(--accent-gold-light);
+    box-shadow: 0 0 0 3px rgba(212, 165, 116, 0.2);
+    transform: scale(1.03);
+}
+
+.search:hover {
+    border-color: var(--accent-gold);
+}
+
+@keyframes slideDown {
+    from {
+        opacity: 0;
+        transform: translateY(-10px);
+    }
+    to {
+        opacity: 1;
+        transform: translateY(0);
+    }
+}
+
+@media (max-width: 768px) {
+    .search {
+        max-width: 90%;
+        font-size: 0.95rem;
+    }
 }

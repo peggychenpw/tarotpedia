@@ -1,36 +1,160 @@
 
 .card-container {
   text-align: center;
-  margin-bottom: 30px;
+  width: 100%;
+  max-width: 280px;
 
-  .card-item{
-    
-      .image {
-        width: 60%;
-        height: 60%;
-      }
+  .card-item {
+    background: var(--bg-secondary);
+    border: 1px solid var(--border-color);
+    border-radius: 15px;
+    padding: 1.5rem;
+    transition: all 0.4s cubic-bezier(0.23, 1, 0.320, 1);
+    backdrop-filter: blur(10px);
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    cursor: pointer;
+    min-height: 420px;
+    box-shadow: 0 8px 32px rgba(0, 0, 0, 0.1);
+    animation: cardFadeIn 0.6s ease backwards;
+
+    &:nth-child(1) { animation-delay: 0.1s; }
+    &:nth-child(2) { animation-delay: 0.2s; }
+    &:nth-child(3) { animation-delay: 0.3s; }
+    &:nth-child(4) { animation-delay: 0.4s; }
+    &:nth-child(5) { animation-delay: 0.5s; }
+    &:nth-child(n+6) { animation-delay: 0.6s; }
+
+    &:hover {
+      transform: translateY(-12px) scale(1.02);
+      background: var(--bg-secondary);
+      border-color: var(--accent-gold);
+      box-shadow: 0 20px 50px rgba(212, 165, 116, 0.4);
+    }
+
+    .image {
+      width: 100%;
+      max-width: 150px;
+      height: auto;
+      aspect-ratio: 3/4;
+      object-fit: cover;
+      border-radius: 10px;
+      transition: all 0.4s cubic-bezier(0.23, 1, 0.320, 1);
+      margin-bottom: 1rem;
+      box-shadow: 0 4px 15px rgba(0, 0, 0, 0.2);
+      filter: brightness(0.95);
+    }
+
+    &:hover .image {
+      transform: scale(1.08);
+      filter: brightness(1);
+      box-shadow: 0 8px 25px var(--accent-gold-light);
+    }
+
+    .name {
+      text-transform: uppercase;
+      margin: 0.5rem 0;
+      font-size: 1.2rem;
+      font-family: 'Macondo', 'Cardo', serif;
+      color: var(--accent-gold);
+      font-weight: 700;
+      letter-spacing: 1px;
+      transition: color 0.3s ease;
+    }
+
+    &:hover .name {
+      color: var(--accent-gold-light);
+    }
+
+    .keyword-title {
+      text-transform: capitalize;
+      margin: 0.75rem 0;
+      font-size: 1rem;
+      font-family: 'Macondo', 'Cardo', serif;
+      font-weight: 700;
+      color: var(--accent-gold-light);
+      transition: all 0.3s ease;
+    }
+
+    &:hover .keyword-title {
+      transform: scale(1.05);
+    }
+
+    .fortune {
+      word-wrap: break-word;
+      margin: 0.5rem 0;
+      font-size: 0.9rem;
+      font-family: 'Cardo', serif;
+      color: var(--text-secondary);
+      line-height: 1.5;
+      flex-grow: 1;
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      transition: color 0.3s ease;
+    }
+
+    &:hover .fortune {
+      color: var(--text-primary);
+    }
+  }
+}
+
+@keyframes cardFadeIn {
+  from {
+    opacity: 0;
+    transform: translateY(30px);
+  }
+  to {
+    opacity: 1;
+    transform: translateY(0);
+  }
+}
+
+@media (max-width: 768px) {
+  .card-container {
+    max-width: 100%;
+
+    .card-item {
+      min-height: auto;
+      padding: 1rem;
 
       .name {
-        text-transform: uppercase;
-        margin: 20px auto;
-        font-size: 20px;
-        font-family: 'Macondo', 'Cardo', serif ;
-        color: brown;
+        font-size: 1.1rem;
       }
 
       .keyword-title {
-        text-transform: capitalize;
-        margin: 10px auto;
-        font-size: 18px;
-        font-family: 'Macondo', 'Cardo', serif ;
-        font-weight: 700;
+        font-size: 0.95rem;
       }
 
       .fortune {
-        word-wrap:break-word;
-        margin: 10px auto;
-        font-size: 16px;
-        font-family:'Cardo', serif ;
+        font-size: 0.85rem;
       }
     }
+  }
+}
+
+@media (max-width: 480px) {
+  .card-container {
+    .card-item {
+      padding: 0.8rem;
+
+      .image {
+        max-width: 120px;
+      }
+
+      .name {
+        font-size: 1rem;
+      }
+
+      .keyword-title {
+        font-size: 0.9rem;
+      }
+
+      .fortune {
+        font-size: 0.8rem;
+      }
+    }
+  }
 }
