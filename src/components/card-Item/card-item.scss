@@ -1,160 +1,59 @@
+.tarot-card {
+  display: flex;
+  min-width: 0;
+  flex-direction: column;
+  align-items: center;
+  padding: .9rem .9rem 1.1rem;
+  border: 1px solid var(--line);
+  border-radius: 5px;
+  background: var(--surface);
+  box-shadow: 0 12px 30px var(--shadow);
+  transition: transform .25s ease, border-color .25s ease, background .25s ease;
 
-.card-container {
-  text-align: center;
-  width: 100%;
-  max-width: 280px;
+  &:hover { transform: translateY(-4px); border-color: var(--gold); background: var(--surface-raised); }
 
-  .card-item {
-    background: var(--bg-secondary);
-    border: 1px solid var(--border-color);
-    border-radius: 15px;
-    padding: 1.5rem;
-    transition: all 0.4s cubic-bezier(0.23, 1, 0.320, 1);
-    backdrop-filter: blur(10px);
+  .card-meta {
     display: flex;
-    flex-direction: column;
+    width: 100%;
     align-items: center;
-    cursor: pointer;
-    min-height: 420px;
-    box-shadow: 0 8px 32px rgba(0, 0, 0, 0.1);
-    animation: cardFadeIn 0.6s ease backwards;
-
-    &:nth-child(1) { animation-delay: 0.1s; }
-    &:nth-child(2) { animation-delay: 0.2s; }
-    &:nth-child(3) { animation-delay: 0.3s; }
-    &:nth-child(4) { animation-delay: 0.4s; }
-    &:nth-child(5) { animation-delay: 0.5s; }
-    &:nth-child(n+6) { animation-delay: 0.6s; }
-
-    &:hover {
-      transform: translateY(-12px) scale(1.02);
-      background: var(--bg-secondary);
-      border-color: var(--accent-gold);
-      box-shadow: 0 20px 50px rgba(212, 165, 116, 0.4);
-    }
-
-    .image {
-      width: 100%;
-      max-width: 150px;
-      height: auto;
-      aspect-ratio: 3/4;
-      object-fit: cover;
-      border-radius: 10px;
-      transition: all 0.4s cubic-bezier(0.23, 1, 0.320, 1);
-      margin-bottom: 1rem;
-      box-shadow: 0 4px 15px rgba(0, 0, 0, 0.2);
-      filter: brightness(0.95);
-    }
-
-    &:hover .image {
-      transform: scale(1.08);
-      filter: brightness(1);
-      box-shadow: 0 8px 25px var(--accent-gold-light);
-    }
-
-    .name {
-      text-transform: uppercase;
-      margin: 0.5rem 0;
-      font-size: 1.2rem;
-      font-family: 'Macondo', 'Cardo', serif;
-      color: var(--accent-gold);
-      font-weight: 700;
-      letter-spacing: 1px;
-      transition: color 0.3s ease;
-    }
-
-    &:hover .name {
-      color: var(--accent-gold-light);
-    }
-
-    .keyword-title {
-      text-transform: capitalize;
-      margin: 0.75rem 0;
-      font-size: 1rem;
-      font-family: 'Macondo', 'Cardo', serif;
-      font-weight: 700;
-      color: var(--accent-gold-light);
-      transition: all 0.3s ease;
-    }
-
-    &:hover .keyword-title {
-      transform: scale(1.05);
-    }
-
-    .fortune {
-      word-wrap: break-word;
-      margin: 0.5rem 0;
-      font-size: 0.9rem;
-      font-family: 'Cardo', serif;
-      color: var(--text-secondary);
-      line-height: 1.5;
-      flex-grow: 1;
-      display: flex;
-      align-items: center;
-      justify-content: center;
-      transition: color 0.3s ease;
-    }
-
-    &:hover .fortune {
-      color: var(--text-primary);
-    }
+    justify-content: space-between;
+    gap: .5rem;
+    margin-bottom: .75rem;
+    color: var(--subtle);
+    font-size: .56rem;
+    letter-spacing: .12em;
   }
+
+  .tarot-image {
+    display: block;
+    width: min(100%, 185px);
+    aspect-ratio: 3 / 5;
+    border: 3px solid var(--page-soft);
+    border-radius: 2px;
+    background: var(--page-soft);
+    box-shadow: 0 5px 16px var(--shadow);
+    object-fit: cover;
+  }
+
+  .tarot-card-copy { display: flex; width: 100%; flex: 1; flex-direction: column; align-items: center; text-align: center; }
+  .tarot-name { margin: .85rem 0 .25rem; color: var(--text); font-family: 'Playfair Display', Georgia, serif; font-size: 1.05rem; font-weight: 500; line-height: 1.35; }
+  .tarot-keywords { min-height: 1.1rem; margin: 0; color: var(--gold-bright); font-size: .7rem; line-height: 1.5; }
+  .tarot-message { width: 100%; margin-top: .8rem; padding-top: .7rem; border-top: 1px solid var(--line); }
+  .tarot-message span { color: var(--subtle); font-size: .53rem; letter-spacing: .15em; }
+  .tarot-message p { display: -webkit-box; margin: .4rem 0 0; overflow: hidden; color: var(--muted); font-size: .72rem; line-height: 1.55; -webkit-box-orient: vertical; -webkit-line-clamp: 3; }
 }
 
-@keyframes cardFadeIn {
-  from {
-    opacity: 0;
-    transform: translateY(30px);
-  }
-  to {
-    opacity: 1;
-    transform: translateY(0);
-  }
+@media (max-width: 600px) {
+  .tarot-card { padding: .65rem .6rem .8rem; }
+  .tarot-card .tarot-image { width: min(100%, 155px); border-width: 2px; }
+  .tarot-card .card-meta { margin-bottom: .55rem; font-size: .49rem; letter-spacing: .08em; }
+  .tarot-card .tarot-name { margin-top: .65rem; font-size: .92rem; }
+  .tarot-card .tarot-keywords { min-height: 1.7rem; font-size: .61rem; }
+  .tarot-card .tarot-message { margin-top: .55rem; padding-top: .55rem; }
+  .tarot-card .tarot-message span { font-size: .47rem; }
+  .tarot-card .tarot-message p { font-size: .65rem; -webkit-line-clamp: 3; }
 }
 
-@media (max-width: 768px) {
-  .card-container {
-    max-width: 100%;
-
-    .card-item {
-      min-height: auto;
-      padding: 1rem;
-
-      .name {
-        font-size: 1.1rem;
-      }
-
-      .keyword-title {
-        font-size: 0.95rem;
-      }
-
-      .fortune {
-        font-size: 0.85rem;
-      }
-    }
-  }
-}
-
-@media (max-width: 480px) {
-  .card-container {
-    .card-item {
-      padding: 0.8rem;
-
-      .image {
-        max-width: 120px;
-      }
-
-      .name {
-        font-size: 1rem;
-      }
-
-      .keyword-title {
-        font-size: 0.9rem;
-      }
-
-      .fortune {
-        font-size: 0.8rem;
-      }
-    }
-  }
+@media (prefers-reduced-motion: reduce) {
+  .tarot-card:hover { transform: none; }
 }

@@ -1,43 +1,55 @@
-* {
-  box-sizing: border-box;
+:root[data-theme="dark"] {
+  color-scheme: dark;
+  --page: #171612;
+  --page-soft: #1d1b17;
+  --surface: #211f1a;
+  --surface-raised: #29261f;
+  --text: #f4efe5;
+  --muted: #b2a995;
+  --subtle: #827967;
+  --gold: #d4b27a;
+  --gold-bright: #ecd9ae;
+  --line: rgba(212, 178, 122, .2);
+  --shadow: rgba(0, 0, 0, .24);
 }
 
+:root[data-theme="light"] {
+  color-scheme: light;
+  --page: #f4f0e8;
+  --page-soft: #eee8dc;
+  --surface: #fbf9f4;
+  --surface-raised: #fffdf8;
+  --text: #29251f;
+  --muted: #6f675b;
+  --subtle: #8e8373;
+  --gold: #987348;
+  --gold-bright: #b18c5e;
+  --line: rgba(112, 83, 45, .2);
+  --shadow: rgba(55, 42, 24, .1);
+}
+
+* { box-sizing: border-box; }
+html { min-width: 320px; scroll-behavior: smooth; scroll-padding-top: 90px; }
 body {
+  min-width: 320px;
   margin: 0;
-  padding: 0;
-  font-family: 'Cardo', 'Macondo', -apple-system, BlinkMacSystemFont, 'Segoe UI', 'Roboto', 'Oxygen',
-    'Ubuntu', 'Cantarell', 'Fira Sans', 'Droid Sans', 'Helvetica Neue',
-    sans-serif;
+  background: var(--page);
+  color: var(--text);
+  font-family: 'Cardo', Georgia, serif;
   -webkit-font-smoothing: antialiased;
   -moz-osx-font-smoothing: grayscale;
-  background: var(--bg-primary);
-  min-height: 100vh;
-  color: var(--text-primary);
-  transition: background 0.5s ease, color 0.5s ease;
 }
+button, input { font: inherit; }
+button { color: inherit; }
+a { color: inherit; }
+::selection { color: var(--page); background: var(--gold); }
+:focus-visible { outline: 2px solid var(--gold-bright); outline-offset: 3px; }
 
-code {
-  font-family: source-code-pro, Menlo, Monaco, Consolas, 'Courier New',
-    monospace;
-}
-
-html {
-  scroll-behavior: smooth;
-}
-
-::-webkit-scrollbar {
-  width: 10px;
-}
-
-::-webkit-scrollbar-track {
-  background: var(--bg-secondary);
-}
-
-::-webkit-scrollbar-thumb {
-  background: var(--accent-gold);
-  border-radius: 5px;
-}
-
-::-webkit-scrollbar-thumb:hover {
-  background: var(--accent-gold-light);
+@media (prefers-reduced-motion: reduce) {
+  *, *::before, *::after {
+    scroll-behavior: auto !important;
+    animation-duration: .01ms !important;
+    animation-iteration-count: 1 !important;
+    transition-duration: .01ms !important;
+  }
 }

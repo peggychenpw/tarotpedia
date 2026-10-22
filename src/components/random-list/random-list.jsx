@@ -1,29 +1,31 @@
 import React from 'react';
-import '../../tarot-data';
-import RandomItem from '../random-Item /random-item';
+import RandomItem from '../random-item/random-item';
+import ReadingInterpretation, { SpreadSummary } from '../reading-interpretation/reading-interpretation';
+import './random-list.scss';
 
-import "../random-list/random-list.scss"
+const positions = ['Past', 'Present', 'What’s next'];
 
 const RandomList = ({ cardData, isDraw }) => {
+  if (!isDraw || cardData.length === 0) return null;
 
-    return (
-        <div className="random-list-wrapper">
-            {isDraw === true && cardData.length > 0 ? (
-                <>
-                    <div className="labels-row">
-                        <div className="label">PAST</div>
-                        <div className="label">PRESENT</div>
-                        <div className="label">FUTURE</div>
-                    </div>
-                    <div className="card-list">
-                        {cardData.map((card, index) => (
-                            <RandomItem key={"key" + String(card.number)} card={card} />
-                        ))}
-                    </div>
-                </>
-            ) : null}
-        </div>
-    )
-}
+  return (
+    <section className="reading-results" aria-labelledby="reading-results-title">
+      <div className="reading-results-heading">
+        <h3 id="reading-results-title">Your spread</h3>
+        <p>Tap a card to reveal its meaning.</p>
+      </div>
+      <SpreadSummary cards={cardData} />
+      <div className="reading-grid">
+        {cardData.map((card, index) => (
+          <article className="reading-position" key={card.number}>
+            <p className="position-label"><span>0{index + 1}</span>{positions[index]}</p>
+            <RandomItem card={card} />
+          </article>
+        ))}
+      </div>
+      <ReadingInterpretation cards={cardData} />
+    </section>
+  );
+};
 
 export default RandomList;

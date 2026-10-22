@@ -1,0 +1,19 @@
+.reading-card { display: flex; min-width: 0; height: 100%; flex-direction: column; align-items: center; padding: .85rem .7rem 1rem; border: 1px solid var(--line); border-radius: 4px; background: var(--surface); }
+.reading-card-image-button { display: block; width: min(100%, 175px); padding: 0; overflow: hidden; border: 3px solid var(--page-soft); border-radius: 2px; background: var(--page-soft); cursor: pointer; }
+.reading-card-image-button:focus-visible { outline-offset: 4px; }
+.reading-card-image { display: block; width: 100%; aspect-ratio: 3 / 5; object-fit: cover; transition: transform .35s ease; }
+.reading-card-image-button:hover .reading-card-image { transform: scale(1.025); }
+.reveal-hint { margin: .65rem 0 0; color: var(--subtle); font-size: .65rem; }
+.reading-card-copy { width: 100%; margin-top: .75rem; animation: reveal-in .3s ease both; }
+.reading-card-copy h4 { margin: 0; color: var(--gold-bright); font-family: 'Playfair Display', Georgia, serif; font-size: .98rem; font-weight: 500; }
+.reading-card-copy p { margin: .45rem 0 0; color: var(--muted); font-size: .72rem; line-height: 1.55; }
+.reading-card-copy .reading-card-keyword { color: var(--subtle); font-size: .62rem; }
+@keyframes reveal-in { from { opacity: 0; transform: translateY(5px); } to { opacity: 1; transform: translateY(0); } }
+
+@media (max-width: 600px) {
+  .reading-card { padding: .6rem .45rem .8rem; }
+  .reading-card-image-button { width: 100%; max-width: 145px; border-width: 2px; }
+  .reading-card-copy h4 { font-size: .78rem; }
+  .reading-card-copy p { font-size: .63rem; }
+  .reading-card-copy .reading-card-keyword { font-size: .55rem; }
+}
